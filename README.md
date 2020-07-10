@@ -5,13 +5,14 @@ interfejsy odpowiednio `UserRepository`, `PostRepository` i `FollowRepository` o
 Do każdej metody w interfejsach zostały napisane testy automatyczne. 
 
 Przed rozpoczęciem zadań należy:
-1. włączyć annotation procesor w ustwieniach IntellJ 
+1. zaintalować bazę mongo https://www.mongodb.com/try/download/community?tck=docs_server
+2. włączyć annotation procesor w ustwieniach IntellJ 
     * Build, Execution, Deployment -> Compiler -> Annotation Processors
-2. stworzyć osobnego brancha na którym będziesz pracować.
-3. zdefiniować ustawienia połączenia do MongoDB w klasie `MongoSettingsProvider`
+3. stworzyć osobnego brancha na którym będziesz pracować.
+4. zdefiniować ustawienia połączenia do MongoDB w klasie `MongoSettingsProvider`
     * stworzyć `ConnectionString` np. `"mongodb://user:password@localhost:27017"`
     * zarejestrować dwa codec'i `PojoCodec` i standartowe w zdefiniowane w rejestrze 
-4. dodać potrzebne zależności do pom.xml.
+5. dodać potrzebne zależności do pom.xml.
     * ```xml
       <dependency>
           <groupId>org.mongodb</groupId>
